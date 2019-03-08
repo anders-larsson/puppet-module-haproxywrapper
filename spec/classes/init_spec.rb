@@ -36,6 +36,7 @@ describe 'haproxywrapper' do
     it { should have_haproxy__instance_resource_count(1) } # one from haproxy, but none from haproxywrapper
     it { should have_haproxy__instance_service_resource_count(0) }
     it { should have_haproxy__mapfile_resource_count(0) }
+    it { should have_haproxy__defaults_resource_count(0) }
   end
 
   describe 'with balancermember set to valid hash (containing two keys)' do
