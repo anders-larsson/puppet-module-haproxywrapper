@@ -108,7 +108,7 @@ describe 'haproxywrapper' do
         :message => '(is not a boolean|Unknown type of boolean given)',
       },
       'hash' => {
-        :name    => %w(default_options global_options),
+        :name    => %w(defaults_options global_options),
         :valid   => [], # valid hashes are to complex to block test them here.
         :invalid => ['string', 3, 2.42, %w(array), true, false, nil],
         :message => 'is not a Hash',
